@@ -1,0 +1,52 @@
+doctype html
+// Added title overlay for real now
+
+html
+	link(rel='stylesheet', type='text/css', href='Styles/style.css')
+	script(src="JavaScript/jquery-3.1.1.min.js")
+	script(src="JavaScript/functions.js")
+
+	head
+		title This is my website!
+		meta(name='description', content='My cool website')
+	body
+		header.header-back
+				.header-bg
+				.logo
+
+
+		a(href='https://www.google.com')
+			div(style='background-color:red; float:left; width:25%')
+				p Hi
+		div(style='background-color:yellow; float:left; width:25%')
+			p Hi
+		div(style='background-color:green; float:left; width:25%')
+			p Hi
+		div(style='background-color:blue; float:left; width:25%')
+			p Hi
+		p
+			a(href='#bottom') Go to bottom
+		p
+			a(href='#images') Go to images
+		p Sup
+		ul(style='margin-left:100px')
+			li This
+			li is
+			li my
+			li website
+		center
+			h2#images(style='padding-top:40px;')  Look at these cool images of mine 
+			img#mainImg(src='https://i.imgur.com/4I5x4dl.jpg')
+			img#mainImg(src='https://i.imgur.com/DHtxCYM.png')
+			img#mainImg(src='https://i.imgur.com/jDo88wA.jpg')
+			img#mainImg(src='https://i.imgur.com/JWAMEr9.gif')
+			img#mainImg(src='https://i.imgur.com/o6d8oZT.png')
+			img#mainImg(src='https://i.imgur.com/7SCA9tp.png')
+			img#mainImg(src='http://matthewjamestaylor.com/img/illustrations/thumb/keeping-footers-at-the-bottom-of-the-page.jpg')
+		p Bye
+		p
+			a(href='#top') Go to top
+		p
+			a(href='#images') Go to images
+		center
+			h3#bottom ---Bottom of Page---
