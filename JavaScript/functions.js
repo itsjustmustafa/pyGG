@@ -14,7 +14,7 @@ $(window).scroll(function(){
 
 	}
 	$('.header-bg').css({
-		'transform' : 'translate(0px, '+ wScroll/1.2 +'px)',
+		'transform' : 'translate(0px, '+ wScroll/1 +'px)',
 	});
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     	$('body').css({
