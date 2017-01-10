@@ -1,3 +1,12 @@
+var isMobile = false;
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	isMobile = true;
+	$('.header-bg').toggleClass('mobilePara');
+}else{
+	console.log("You are on Desktop!");
+}
+
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 	console.log(wScroll);
@@ -13,14 +22,11 @@ $(window).scroll(function(){
 		});
 
 	}
-	$('.header-bg').css({
-		'transform' : 'translate(0px, '+ wScroll/1 +'px)',
-	});
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    	$('body').css({
-    		'background-color' : '#ffffff',
-    	})
 
+	if (isMobile) {
+		$('.header-bg').css({
+			'transform' : 'translate(0px, '+ wScroll/1 +'px)',
+		});
 	}
 
 });
