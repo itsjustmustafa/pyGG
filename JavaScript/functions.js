@@ -9,7 +9,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
-	console.log(wScroll);
 	if (wScroll <= 200) {
 		$('.logo').css({
 			'transform' : 'translate(0px,'+ wScroll/2+'px) scale('+((450-wScroll)/450)+','+((450-wScroll)/450)+')',
