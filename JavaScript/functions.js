@@ -25,7 +25,7 @@ $(window).scroll(function(){
 
 	if (isMobile) {
 		$('.header-bg').css({
-			'transform' : 'translate(0px, -'+ wScroll/1 +'px)',
+			'transform' : 'translate(0px, '+ wScroll/1 +'px)',
 		});
 	}
 
