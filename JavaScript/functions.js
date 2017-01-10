@@ -1,5 +1,5 @@
 var isMobile = false;
-
+console.log("Now accounting for mobile!");
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 	isMobile = true;
 	$('.header-bg').toggleClass('mobilePara');
